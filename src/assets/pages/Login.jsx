@@ -42,26 +42,23 @@ function FormGroupExample() {
 
 
     <div className="login-page">
-      <div>  <h1 className='WEL'>  WELCOME!!</h1></div>
+      <h1 className='WEL'>WELCOME!!</h1>
 
-      <Form onSubmit={Getauth}>
-
-
-
-        <Form.Group className="mb-3" controlId="formGroupEmail">
-          <Form.Label>UserName</Form.Label>
-          <Form.Control type="text" placeholder="Enter yor name " value={username}
-            onChange={(e) => setusername(e.target.value)} />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formGroupPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" value={password}
-            onChange={(e) => setPassword(e.target.value)} />
-
-
-        </Form.Group>
-        <Button className='btn-gradient-sparkle' type='submit'>Login</Button>
-      </Form>
+      <div className="login-container">
+        <Form onSubmit={Getauth}>
+          <Form.Group className="mb-3" controlId="formGroupEmail">
+            <Form.Label>UserName</Form.Label>
+            <Form.Control type="text" placeholder="Enter yor name" value={username}
+              onChange={(e) => setusername(e.target.value)} />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formGroupPassword">
+            <Form.Label>Password</Form.Label>
+            <Form.Control type="password" placeholder="Password" value={password}
+              onChange={(e) => setPassword(e.target.value)} />
+          </Form.Group>
+          <Button className='btn-gradient-sparkle' type='submit'>Login</Button>
+        </Form>
+      </div>
     </div>
 
 
