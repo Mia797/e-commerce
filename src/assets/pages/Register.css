@@ -1,0 +1,141 @@
+/* ===== Page Wrapper ===== */
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: radial-gradient(circle at top, #0b0f2a, #1a1f4a);
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+}
+
+/* ===== Form Container ===== */
+.register-container {
+  background: linear-gradient(145deg, #141833, #1c2147);
+  padding: 50px 35px;
+  border-radius: 25px;
+  width: 450px;
+  box-shadow: 0 0 30px rgba(123, 92, 255, 0.5), 0 0 20px rgba(255, 78, 205, 0.3);
+  text-align: center;
+  position: relative;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* ===== Heading ===== */
+.register-container h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 35px;
+  background: linear-gradient(135deg, #00fff7, #007bff, #ff4ecd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* ===== Fade-in Animation ===== */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Inputs & Selects ===== */
+.register-container .form-control,
+.register-container .form-select {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 16px 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.register-container .form-control::placeholder {
+  color: #a9b0d6;
+}
+
+.register-container .form-control:focus,
+.register-container .form-select:focus {
+  background-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 10px #6c63ff;
+  outline: none;
+  transform: scale(1.03);
+}
+
+/* ===== Labels ===== */
+.register-container .form-label {
+  color: #a9b0d6;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+/* ===== Checkbox ===== */
+.register-container .form-check-label {
+  color: #ccc;
+  font-weight: 500;
+}
+
+/* ===== Submit Button ===== */
+.register-container .btn {
+  width: 100%;
+  padding: 16px;
+  font-size: 17px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(90deg, #00fff7, #007bff, #ff4ecd);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 255, 247, 0.7), 0 0 20px rgba(0, 123, 255, 0.7);
+  position: relative;
+  overflow: hidden;
+}
+
+.register-container .btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(123, 92, 255, 0.7), 0 0 25px rgba(255, 78, 205, 0.7);
+}
+
+.register-container .btn::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 60%);
+  transform: rotate(25deg);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.register-container .btn:hover::before {
+  opacity: 1;
+  animation: shine 1s linear infinite;
+}
+
+@keyframes shine {
+  0% { transform: translateX(-100%) rotate(25deg); }
+  100% { transform: translateX(100%) rotate(25deg); }
+}
+
+/* ===== Row Spacing ===== */
+.register-container .row {
+  gap: 15px;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 768px) {
+  .register-container {
+    width: 90%;
+    padding: 35px;
+  }
+
+  .register-container h1 {
+    font-size: 40px;
+  }
+}

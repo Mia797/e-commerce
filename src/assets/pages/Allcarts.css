@@ -1,0 +1,104 @@
+/* Allcarts.css - Professional Dark Theme */
+
+.allcarts-page {
+    padding: 2rem;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    color: #ffffff;
+}
+
+.allcarts-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.table-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    overflow: hidden;
+}
+
+/* Customizing React-Bootstrap Table */
+.custom-table {
+    color: #e0e0e0 !important;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin-top: -8px; /* Offset the spacing for the first row */
+}
+
+.custom-table thead th {
+    background: linear-gradient(90deg, #1e3c72 0%, #2a5298 100%);
+    color: #fff;
+    border: none !important;
+    padding: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.custom-table tbody tr {
+    background: rgba(255, 255, 255, 0.03);
+    transition: all 0.3s ease;
+}
+
+.custom-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    transform: scale(1.01);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.custom-table td {
+    padding: 15px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+    vertical-align: middle;
+}
+
+/* Action Buttons */
+.action-btn {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-single {
+    background: linear-gradient(45deg, #00d2ff, #3a7bd5);
+    color: white;
+}
+
+.btn-edit {
+    background: linear-gradient(45deg, #f093fb, #f5576c);
+    color: white;
+    margin: 0 5px;
+}
+
+.btn-delete {
+    background: linear-gradient(45deg, #ff0844, #ffb199);
+    color: white;
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.action-btn:active {
+    transform: translateY(0);
+}

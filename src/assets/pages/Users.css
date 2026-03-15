@@ -1,0 +1,75 @@
+/* Users.css - Professional Dark Theme */
+
+.users-page {
+    padding: 2rem;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+    color: #ffffff;
+}
+
+.users-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+    background: linear-gradient(90deg, #00f2fe 0%, #4facfe 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.users-table-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.users-custom-table {
+    color: #f0f0f0 !important;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.users-custom-table thead th {
+    background: linear-gradient(90deg, #16222a 0%, #3a6073 100%);
+    color: #fff;
+    border: none !important;
+    padding: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.users-custom-table tbody tr {
+    background: rgba(255, 255, 255, 0.02);
+    transition: all 0.3s ease;
+}
+
+.users-custom-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+    transform: translateX(10px);
+    box-shadow: -5px 0 15px rgba(79, 172, 254, 0.3);
+}
+
+.users-custom-table td {
+    padding: 15px 18px !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.05) !important;
+    vertical-align: middle;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .users-title {
+        font-size: 2rem;
+    }
+    
+    .users-page {
+        padding: 1rem;
+    }
+}
